@@ -23,6 +23,7 @@ public class AvailibilityServiceImpl implements IAvailibilityService{
 	@Override
 	public int addAvailibility(Availibility availibility) {
 		// TODO Auto-generated method stub
+		//Determine dduration
 		String ch = findDifference(availibility.getStart(), availibility.getEnd());
 		availibility.setDuration(ch);
 		
